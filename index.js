@@ -28,8 +28,8 @@ bot.setWebHook(`${URL}/bot${TOKEN}`);
 function getWelcomeMessage() {
     return {
         type: 'photo',
-        media: 'https://i.postimg.cc/m202kJm6/img2.jpg',
-        caption: `🙈 **C-A-R-L-A😈**
+        media: 'https://i.postimg.cc/Z54nVQn9/img2.jpg',
+        caption: `🙈 **NATHALY JESSIC😈**
 
 🔥 **𝗦𝗨𝗦𝗖𝗥𝗜𝗕𝗘𝗧𝗘😉🔥**
 
@@ -106,7 +106,7 @@ bot.on('callback_query', async (query) => {
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                    media: 'https://i.postimg.cc/3RcQ606p/img5.jpg',
+                    media: 'https://i.postimg.cc/28fSStQ3/img5.jpg',
                     caption: `𝗛𝗢𝗟𝗜 💕🔥
 TODOS MIS MÉTODOS DE PAGO 🥰
 
@@ -132,7 +132,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                    media: 'https://i.postimg.cc/vTN16cKj/Whats-App-Image-2026-01-27-at-09-05-41.jpg',
+                    media: 'https://i.postimg.cc/yYwWcd4w/Whats-App-Image-2026-02-10-at-12-02-12.jpg',
                     caption: `🇧🇴 **PAGAR 100 BS**
 
 📌 Saca una captura y pagalo por tu banca  
@@ -144,7 +144,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                     reply_markup: {
                         inline_keyboard: [
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
-                            [{ text: '✅ Ya pagué', url: 'https://t.me/agentedeinformacion' }]
+                            [{ text: '✅ enviar captura', url: 'https://t.me/agentedeinformacion' }]
                         ]
                     }
                 }
@@ -157,10 +157,22 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                 {
                     type: 'photo',
                     media: 'https://i.postimg.cc/5y4rgHF9/depositphotos-220680152-stock-illustration-paypal-logo-printed-white-paper.jpg',
-                    caption: `💳 **PAGO POR PAYPAL**
+                      caption: `✨💎 **SUSCRIPCIÓN GRUPO VIP** 💎✨
 
-📌 Monto: **11.50 USD**
-⬇️ Envía tu correo para el cobro ⬇️`,
+Si quieres suscribirte a mi **Grupo VIP** 💎 y acceder a **contenido exclusivo mío** 😘🔥, puedes hacerlo con un solo pago de:
+
+💰 **11.50 USD**
+
+💳 **PAGO POR PAYPAL** 💙
+
+📌 **Monto:** **11.50 USD**
+⬇️ Puedes pagar tu suscripción bb a este correo
+(es de un familiar mío) ⬇️
+
+📧 **Correo PayPal (copiar y pegar):**
+\`alejandrohinojosasoria237@gmail.com\`
+
+Nos vemos dentro del VIP 🔥💎`,
                 },
                 {
                     chat_id: chatId,
@@ -168,7 +180,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                     reply_markup: {
                         inline_keyboard: [
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
-                            [{ text: '✅ Enviar correo', url: 'https://t.me/agentedeinformacion' }]
+                            [{ text: '✅ Enviar captura', url: 'https://t.me/agentedeinformacion' }]
                         ]
                     }
                 }
