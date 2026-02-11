@@ -133,7 +133,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                 {
                     type: 'photo',
                     media: 'https://i.postimg.cc/yYwWcd4w/Whats-App-Image-2026-02-10-at-12-02-12.jpg',
-                    caption: `🇧🇴 **PAGAR 100 BS**
+                    caption: `🇧🇴 **PAGAR 150 BS**
 
 📌 Saca una captura y pagalo por tu banca  
 ⬇️ Envía el comprobante de recibo de pago⬇️`,
