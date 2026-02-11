@@ -39,7 +39,7 @@ Hola, me alegro de que finalmente me hayas encontrado 🔥🔥
 Vamos al grano, ambos sabemos por qué estás aquí jeje 😏  
 Y sí, la pasarás increíble en mi VIP 🫣🔥
 
-💙 **CON UNA PROPINA DE 10 DÓLARES**  
+💙 **CON UNA PROPINA DE 21 DÓLARES**  
 Seras parte de mi comunidad mas especial,
 Desbloqueas fotos y videos MUY exclusivos 🔥
 
@@ -165,7 +165,7 @@ Si quieres suscribirte a mi **Grupo VIP** 💎 y acceder a **contenido exclusivo
 
 💳 **PAGO POR PAYPAL** 💙
 
-📌 **Monto:** **11.50 USD**
+📌 **Monto:** **21 USD**
 ⬇️ Puedes pagar tu suscripción bb a este correo
 (es de un familiar mío) ⬇️
 
