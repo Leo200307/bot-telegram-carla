@@ -161,7 +161,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
 
 Si quieres suscribirte a mi **Grupo VIP** 💎 y acceder a **contenido exclusivo mío** 😘🔥, puedes hacerlo con un solo pago de:
 
-💰 **11.50 USD**
+💰 **21 USD**
 
 💳 **PAGO POR PAYPAL** 💙
 
