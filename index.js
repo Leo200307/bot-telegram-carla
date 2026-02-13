@@ -20,27 +20,34 @@ app.use(express.json());
 
 // ================== BOT WEBHOOK ==================
 const bot = new TelegramBot(TOKEN);
+
+// Webhook
 bot.setWebHook(`${URL}/bot${TOKEN}`);
 
 // ================== FUNCIÓN BIENVENIDA ==================
 function getWelcomeMessage() {
     return {
+        type: 'photo',
         media: 'https://i.postimg.cc/Z54nVQn9/img2.jpg',
         caption: `🙈 *NATHALY JESSIC😈*
 
-🔥 *SUSCRÍBETE* 🔥
+🔥 **𝗦𝗨𝗦𝗖𝗥𝗜𝗕𝗘𝗧𝗘😉🔥**
 
-Hola, me alegro de que finalmente me hayas encontrado 🔥  
-¿Quieres descubrir el contenido de mi canal VIP? 😏
+Hola, me alegro de que finalmente me hayas encontrado 🔥🔥  
+¿Quieres descubrir el contenido de mi canal VIP 🙈🔥?
 
-💙 *PROPINA: 21 USD*  
-Acceso a fotos y videos exclusivos 🔥
+Vamos al grano, ambos sabemos por qué estás aquí jeje 😏  
+Y sí, la pasarás increíble en mi VIP 🫣🔥
 
-🔥 *DURA 1 MES*  
-Tipo OnlyFans 😈
+💙 **CON UNA PROPINA DE 21 DÓLARES**  
+Seras parte de mi comunidad mas especial,
+Desbloqueas fotos y videos MUY exclusivos 🔥
 
-👇 Elige un método de pago`,
-        parse_mode: "Markdown",
+🔥 **𝗟𝗔 𝗦𝗨𝗦𝗖𝗥𝗜𝗣𝗖𝗜𝗢𝗡 𝗗𝗨𝗥𝗔 𝗨𝗡 𝗠𝗘𝗦**  
+Tipo OnlyFans 😈  
+(Contenido SOLO para suscriptores VIP)
+
+👇 Elige un método de pago para empezar`,
         reply_markup: {
             inline_keyboard: [
                 [{ text: "💳 Método de pago", callback_data: "metodo_pago" }]
@@ -49,13 +56,27 @@ Tipo OnlyFans 😈
     };
 }
 
-// ================== WEBHOOK ==================
+// ================== WEBHOOK HANDLER ==================
 app.post(`/bot${TOKEN}`, async (req, res) => {
     res.sendStatus(200);
-    bot.processUpdate(req.body);
+
+    const update = req.body;
+
+    if (update.message && update.message.chat) {
+        try {
+            await bot.sendMessage(
+                update.message.chat.id,
+                "💙💙  BIENVENIDO  💙💙"
+            );
+        } catch (e) {
+            console.log("Mensaje rápido falló:", e.message);
+        }
+    }
+
+    bot.processUpdate(update);
 });
 
-// ================== ENDPOINT ==================
+// ================== ENDPOINT UPTIMEROBOT ==================
 app.get('/', (req, res) => {
     res.send('Bot activo 🚀');
 });
@@ -69,13 +90,7 @@ app.listen(PORT, () => {
 // ================== /START ==================
 bot.onText(/\/start/, async (msg) => {
     const chatId = msg.chat.id;
-    const welcome = getWelcomeMessage();
-
-    await bot.sendPhoto(chatId, welcome.media, {
-        caption: welcome.caption,
-        parse_mode: welcome.parse_mode,
-        reply_markup: welcome.reply_markup
-    });
+    await bot.sendPhoto(chatId, getWelcomeMessage().media, getWelcomeMessage());
 });
 
 // ================== BOTONES ==================
@@ -90,12 +105,12 @@ bot.on('callback_query', async (query) => {
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                    media: 'https://i.postimg.cc/28fSStQ3/img5.jpg',
-                    caption: `*TODOS MIS MÉTODOS DE PAGO* 🥰
+                      media: 'https://i.postimg.cc/28fSStQ3/img5.jpg',
+                    caption: `𝗛𝗢𝗟𝗜 💕🔥
+TODOS MIS MÉTODOS DE PAGO 🥰
 
-🇧🇴 Bolivia  
-🌍 Extranjero`,
-                    parse_mode: "Markdown"
+📌 **BOLIVIA 🇧🇴**
+📌 **EXTRANJERO 🌍**`,
                 },
                 {
                     chat_id: chatId,
@@ -117,11 +132,11 @@ bot.on('callback_query', async (query) => {
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                    media: 'https://i.postimg.cc/yYwWcd4w/Whats-App-Image-2026-02-10-at-12-02-12.jpg',
+                      media: 'https://i.postimg.cc/yYwWcd4w/Whats-App-Image-2026-02-10-at-12-02-12.jpg',
                     caption: `🇧🇴 *PAGAR 150 BS*
 
-Envía la captura del pago 👇`,
-                    parse_mode: "Markdown"
+📌 Saca una captura y pagalo por tu banca  
+⬇️ Envía el comprobante de recibo de pago⬇️`,
                 },
                 {
                     chat_id: chatId,
@@ -129,7 +144,7 @@ Envía la captura del pago 👇`,
                     reply_markup: {
                         inline_keyboard: [
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
-                            [{ text: '✅ Enviar captura', url: 'https://t.me/agentedeinformacion' }]
+                            [{ text: '✅ Ya pagué', url: 'https://t.me/agentedeinformacion' }]
                         ]
                     }
                 }
@@ -142,13 +157,12 @@ Envía la captura del pago 👇`,
                 {
                     type: 'photo',
                     media: 'https://i.postimg.cc/5y4rgHF9/depositphotos-220680152-stock-illustration-paypal-logo-printed-white-paper.jpg',
-                    caption: `💎 *SUSCRIPCIÓN VIP*
+                    caption: `💳 **PAGO POR PAYPAL**
 
-💰 *21 USD*  
-📧 alejandrohinojosasoria237@gmail.com
+📌 Monto: **21 USD**
+📧 \`alejandrohinojosasoria237@gmail.com\`
 
-Envía la captura después de pagar.`,
-                    parse_mode: "Markdown"
+Envía tu captura después del pago 💎`,
                 },
                 {
                     chat_id: chatId,
@@ -156,35 +170,36 @@ Envía la captura después de pagar.`,
                     reply_markup: {
                         inline_keyboard: [
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
-                            [{ text: '📤 Enviar captura', url: 'https://t.me/agentedeinformacion' }]
+                            [{ text: '✅ Enviar correo', url: 'https://t.me/agentedeinformacion' }]
                         ]
                     }
                 }
             );
         }
 
-        // ===== TARJETA (ARREGLADO) =====
+        // ===== PAGO CON TARJETA =====
         else if (query.data === 'tarjeta') {
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                    media: 'https://i.postimg.cc/Z5Yw0YwM/credit-card.jpg',
-                    caption: `💳 *PAGO CON TARJETA*
+                    media: 'https://i.postimg.cc/NMF1X4FH/Screenshot_20260213_110627_Chrome.jpg',
+                    caption: `💳 **SUSCRIPCIÓN CON TARJETA**
 
-💰 *Monto: 22 USD*
+La suscripción por tarjeta es de **22 USD**  
 
-1️⃣ Presiona "Ir a pagar"  
-2️⃣ Ingresa tu correo  
-3️⃣ Coloca tu tarjeta  
-4️⃣ Envía la captura`,
-                    parse_mode: "Markdown"
+**Pasos para pagar:**
+
+1️⃣ Presiona el botón **Ir a pagar**  
+2️⃣ Coloca tu correo (recibirás un código)  
+3️⃣ Ingresa los datos de tu tarjeta  
+4️⃣ Envía la captura de la transacción`,
                 },
                 {
                     chat_id: chatId,
                     message_id: messageId,
                     reply_markup: {
                         inline_keyboard: [
-                            [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/11c877cb-721b-483e-a339-05b358ea19f8' }],
+                                  [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/11c877cb-721b-483e-a339-05b358ea19f8' }],
                             [{ text: '📤 Enviar captura', url: 'https://t.me/agentedeinformacion' }],
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }]
                         ]
@@ -193,21 +208,18 @@ Envía la captura después de pagar.`,
             );
         }
 
-        // ===== VOLVER =====
+        // ===== VOLVER AL INICIO =====
         else if (query.data === 'volver') {
-            const welcome = getWelcomeMessage();
-
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                    media: welcome.media,
-                    caption: welcome.caption,
-                    parse_mode: "Markdown"
+                    media: getWelcomeMessage().media,
+                    caption: getWelcomeMessage().caption
                 },
                 {
                     chat_id: chatId,
                     message_id: messageId,
-                    reply_markup: welcome.reply_markup
+                    reply_markup: getWelcomeMessage().reply_markup
                 }
             );
         }
@@ -215,6 +227,6 @@ Envía la captura después de pagar.`,
         await bot.answerCallbackQuery(query.id);
 
     } catch (e) {
-        console.log('❌ Error:', e.message);
+        console.log('❌ Error:', e.description || e.message);
     }
 });
