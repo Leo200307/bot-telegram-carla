@@ -62,7 +62,6 @@ app.post(`/bot${TOKEN}`, async (req, res) => {
 
     const update = req.body;
 
-    // Mensaje rápido anti-sleep
     if (update.message && update.message.chat) {
         try {
             await bot.sendMessage(
@@ -120,6 +119,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                         inline_keyboard: [
                             [{ text: '🇧🇴 QR Bolivia', callback_data: 'qr_bolivia' }],
                             [{ text: '💳 PayPal', callback_data: 'paypal' }],
+                            [{ text: '💳 Pago con tarjeta', callback_data: 'tarjeta' }],
                             [{ text: '⬅️ Volver', callback_data: 'volver' }]
                         ]
                     }
@@ -157,7 +157,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                 {
                     type: 'photo',
                     media: 'https://i.postimg.cc/5y4rgHF9/depositphotos-220680152-stock-illustration-paypal-logo-printed-white-paper.jpg',
-                      caption: `✨💎 **SUSCRIPCIÓN GRUPO VIP** 💎✨
+                    caption: `✨💎 **SUSCRIPCIÓN GRUPO VIP** 💎✨
 
 Si quieres suscribirte a mi **Grupo VIP** 💎 y acceder a **contenido exclusivo mío** 😘🔥, puedes hacerlo con un solo pago de:
 
@@ -187,7 +187,38 @@ Nos vemos dentro del VIP 🔥💎`,
             );
         }
 
-        // ===== VOLVER AL INICIO (EDITAR MENSAJE) =====
+        // ===== TARJETA =====
+        else if (query.data === 'tarjeta') {
+            await bot.editMessageMedia(
+                {
+                    type: 'photo',
+                    media: 'https://i.postimg.cc/Z5Yw0YwM/credit-card.jpg',
+                    caption: `💳 **SUSCRIPCIÓN CON TARJETA**
+
+💰 **Monto: 22 USD**
+
+**Pasos para pagar:**
+
+1️⃣ Presiona **Ir a pagar**  
+2️⃣ Coloca tu correo (recibirás un código)  
+3️⃣ Ingresa los datos de tu tarjeta  
+4️⃣ Envía la captura de la transacción`,
+                },
+                {
+                    chat_id: chatId,
+                    message_id: messageId,
+                    reply_markup: {
+                        inline_keyboard: [
+                            [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/11c877cb-721b-483e-a339-05b358ea19f8' }],
+                            [{ text: '📤 Enviar captura', url: 'https://t.me/agentedeinformacion' }],
+                            [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }]
+                        ]
+                    }
+                }
+            );
+        }
+
+        // ===== VOLVER =====
         else if (query.data === 'volver') {
             await bot.editMessageMedia(
                 {
@@ -203,7 +234,6 @@ Nos vemos dentro del VIP 🔥💎`,
             );
         }
 
-        // cerrar loading
         await bot.answerCallbackQuery(query.id);
 
     } catch (e) {
