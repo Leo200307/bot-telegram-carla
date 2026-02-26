@@ -144,7 +144,10 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                     reply_markup: {
                         inline_keyboard: [
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
-                            [{ text: '✅ Ya pagué', url: 'https://t.me/agentedeinformacion' }]
+                            [{ 
+  text: '✅ Ya pagué', 
+  url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20por%20QR%20Bolivia' 
+}]
                         ]
                     }
                 }
@@ -170,7 +173,10 @@ Envía tu captura después del pago 💎`,
                     reply_markup: {
                         inline_keyboard: [
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
-                            [{ text: '✅ Enviar correo', url: 'https://t.me/agentedeinformacion' }]
+                            [{ 
+  text: '✅ Enviar captura', 
+  url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20por%20PayPal' 
+}]
                         ]
                     }
                 }
@@ -200,7 +206,10 @@ La suscripción por tarjeta es de **22 USD**
                     reply_markup: {
                         inline_keyboard: [
                                   [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/11c877cb-721b-483e-a339-05b358ea19f8' }],
-                            [{ text: '📤 Enviar captura', url: 'https://t.me/agentedeinformacion' }],
+                            [{ 
+  text: '📤 Enviar captura', 
+  url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20con%20tarjeta' 
+}],
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }]
                         ]
                     }
