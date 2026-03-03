@@ -205,7 +205,7 @@ La suscripción por tarjeta. POR ESTA SEMANA es de **11 USD**
                     message_id: messageId,
                     reply_markup: {
                         inline_keyboard: [
-                                  [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/11c877cb-721b-483e-a339-05b358ea19f8' }],
+                                  [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/9916423b-7296-4566-b5cc-79e3246b917c' }],
                             [{ 
   text: '📤 Enviar captura', 
   url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20con%20tarjeta' 
