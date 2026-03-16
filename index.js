@@ -39,7 +39,7 @@ Hola, me alegro de que finalmente me hayas encontrado 🔥🔥
 Vamos al grano, ambos sabemos por qué estás aquí jeje 😏  
 Y sí, la pasarás increíble en mi VIP 🫣🔥
 
-💙 ** CON UNA PROPINA DE 21.50 DÓLARES**  
+💙 ** CON UNA PROPINA DE 22 DÓLARES**  
 Seras parte de mi comunidad mas especial,
 Desbloqueas fotos y videos MUY exclusivos 🔥
 
@@ -161,7 +161,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                     media: 'https://i.postimg.cc/5y4rgHF9/depositphotos-220680152-stock-illustration-paypal-logo-printed-white-paper.jpg',
                     caption: `💳 **PAGO POR PAYPAL**
 
-📌 Monto: **21.50 USD**
+📌 Monto: **22 USD**
 📧 \`alejandrohinojosasoria237@gmail.com\`
 
 Envía tu captura después del pago 💎`,
@@ -190,7 +190,7 @@ Envía tu captura después del pago 💎`,
                     media: 'https://i.postimg.cc/NMF1X4FH/Screenshot_20260213_110627_Chrome.jpg',
                     caption: `💳 **SUSCRIPCIÓN CON TARJETA**
 
-La suscripción por tarjeta es de **21.50 USD**  
+La suscripción por tarjeta es de **22 USD**  
 
 **Pasos para pagar:**
 
@@ -204,7 +204,7 @@ La suscripción por tarjeta es de **21.50 USD**
                     message_id: messageId,
                     reply_markup: {
                         inline_keyboard: [
-                                  [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/9916423b-7296-4566-b5cc-79e3246b917c' }],
+                                  [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/43634589-4159-4dc3-a775-5de5659dd899' }],
                             [{ 
   text: '📤 Enviar captura', 
   url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20con%20tarjeta' 
