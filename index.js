@@ -39,12 +39,11 @@ Hola, me alegro de que finalmente me hayas encontrado 🔥🔥
 Vamos al grano, ambos sabemos por qué estás aquí jeje 😏  
 Y sí, la pasarás increíble en mi VIP 🫣🔥
 
-💙 **POR ESTA SEMANA CON UNA PROPINA DE 10.50 DÓLARES**  
+💙 ** CON UNA PROPINA DE 21.50 DÓLARES**  
 Seras parte de mi comunidad mas especial,
 Desbloqueas fotos y videos MUY exclusivos 🔥
 
-🔥 **𝗟𝗔 𝗦𝗨𝗦𝗖𝗥𝗜𝗣𝗖𝗜𝗢𝗡 𝗗𝗨𝗥𝗔 𝗨𝗡 𝗠𝗘𝗦**  
-Tipo OnlyFans 😈  
+
 (Contenido SOLO para suscriptores VIP)
 
 👇 Elige un método de pago para empezar`,
@@ -132,8 +131,8 @@ TODOS MIS MÉTODOS DE PAGO 🥰
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                      media: 'https://i.postimg.cc/jS9KHCgV/IMG-20260302-WA0019.jpg',
-                    caption: `🇧🇴 *POR ESTA SEMANA PAGA 75 BS*
+                      media: 'https://i.postimg.cc/cJv3XHnr/IMG_20260315_WA0011.jpg',
+                    caption: `🇧🇴 *PAGA 200 BS*
 
 📌 Saca una captura y pagalo por tu banca  
 ⬇️ Envía el comprobante de recibo de pago⬇️`,
@@ -162,7 +161,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                     media: 'https://i.postimg.cc/5y4rgHF9/depositphotos-220680152-stock-illustration-paypal-logo-printed-white-paper.jpg',
                     caption: `💳 **PAGO POR PAYPAL**
 
-📌 Monto: POR ESTA SEMANA **10 USD**
+📌 Monto: **21.50 USD**
 📧 \`alejandrohinojosasoria237@gmail.com\`
 
 Envía tu captura después del pago 💎`,
@@ -191,7 +190,7 @@ Envía tu captura después del pago 💎`,
                     media: 'https://i.postimg.cc/NMF1X4FH/Screenshot_20260213_110627_Chrome.jpg',
                     caption: `💳 **SUSCRIPCIÓN CON TARJETA**
 
-La suscripción por tarjeta. POR ESTA SEMANA es de **11 USD**  
+La suscripción por tarjeta es de **21.50 USD**  
 
 **Pasos para pagar:**
 
