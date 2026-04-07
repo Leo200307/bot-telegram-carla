@@ -28,8 +28,8 @@ bot.setWebHook(`${URL}/bot${TOKEN}`);
 function getWelcomeMessage() {
     return {
         type: 'photo',
-        media: 'https://i.postimg.cc/L6j6SHR9/img2.jpg',
-        caption: `🙈 *YHANE LA MOROCHA😈*
+        media: 'https://i.postimg.cc/vTsmf864/img2.jpg',
+        caption: `🙈 *NATHALY JESSIC😈*
 
 🔥 **𝗦𝗨𝗦𝗖𝗥𝗜𝗕𝗘𝗧𝗘😉 SEMANA PROMOCIONAL🔥**
 
@@ -104,7 +104,7 @@ bot.on('callback_query', async (query) => {
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                      media: 'https://i.postimg.cc/TP3RngbX/img6.jpg',
+                      media: 'https://i.postimg.cc/PqDhysHp/img5.jpg',
                     caption: `𝗛𝗢𝗟𝗜 💕🔥
 TODOS MIS MÉTODOS DE PAGO 🥰
 
@@ -131,7 +131,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                      media: 'https://i.postimg.cc/9fhm0smX/IMG_20260406_WA0106.jpg',
+                      media: 'https://i.postimg.cc/hGX83sZT/IMG_20260315_WA0011.jpg',
                     caption: `🇧🇴 *PAGA 200 BS*
 
 📌 Saca una captura y pagalo por tu banca  
@@ -145,7 +145,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
                             [{ 
   text: '✅ Ya pagué', 
-  url: 'https://t.me/agentedeinformacion?text=Hola%20Yhane,%20te%20mando%20la%20captura,%20pagué%20por%20QR%20Bolivia' 
+  url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20por%20QR%20Bolivia' 
 }]
                         ]
                     }
@@ -174,7 +174,7 @@ Envía tu captura después del pago 💎`,
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
                             [{ 
   text: '✅ Enviar captura', 
-  url: 'https://t.me/agentedeinformacion?text=Hola%20Yhane,%20te%20mando%20la%20captura,%20pagué%20por%20PayPal' 
+  url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20por%20PayPal' 
 }]
                         ]
                     }
@@ -204,7 +204,7 @@ La suscripción por tarjeta es de **22 USD**
                     message_id: messageId,
                     reply_markup: {
                         inline_keyboard: [
-                                  [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/6ba0a07c-8985-45cb-8a2e-f324d9112e87' }],
+                                  [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/43634589-4159-4dc3-a775-5de5659dd899' }],
                             [{ 
   text: '📤 Enviar captura', 
   url: 'https://t.me/agentedeinformacion?text=Hola%20Yhane,%20te%20mando%20la%20captura,%20pagué%20con%20tarjeta' 
