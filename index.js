@@ -207,7 +207,7 @@ La suscripción por tarjeta es de **22 USD**
                                   [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/43634589-4159-4dc3-a775-5de5659dd899' }],
                             [{ 
   text: '📤 Enviar captura', 
-  url: 'https://t.me/agentedeinformacion?text=Hola%20Yhane,%20te%20mando%20la%20captura,%20pagué%20con%20tarjeta' 
+  url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20con%20tarjeta' 
 }],
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }]
                         ]
