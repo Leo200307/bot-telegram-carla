@@ -28,8 +28,8 @@ bot.setWebHook(`${URL}/bot${TOKEN}`);
 function getWelcomeMessage() {
     return {
         type: 'photo',
-        media: 'https://i.postimg.cc/vTsmf864/img2.jpg',
-        caption: `🙈 *NATHALY JESSIC😈*
+        media: 'https://i.postimg.cc/vHdbskft/img2.jpg',
+        caption: `🙈 *ARELI KAREN😈*
 
 🔥 **𝗦𝗨𝗦𝗖𝗥𝗜𝗕𝗘𝗧𝗘😉 SEMANA PROMOCIONAL🔥**
 
@@ -104,7 +104,7 @@ bot.on('callback_query', async (query) => {
             await bot.editMessageMedia(
                 {
                     type: 'photo',
-                      media: 'https://i.postimg.cc/PqDhysHp/img5.jpg',
+                      media: 'https://i.postimg.cc/HjGGscV9/img7.jpg',
                     caption: `𝗛𝗢𝗟𝗜 💕🔥
 TODOS MIS MÉTODOS DE PAGO 🥰
 
@@ -146,7 +146,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
                             [{ 
   text: '✅ Ya pagué', 
-  url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20por%20QR%20Bolivia' 
+  url: 'https://t.me/agentedeinformacion?text=Hola%20Areli,%20te%20mando%20la%20captura,%20pagué%20por%20QR%20Bolivia' 
 }]
                         ]
                     }
@@ -175,7 +175,7 @@ Envía tu captura después del pago 💎`,
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
                             [{ 
   text: '✅ Enviar captura', 
-  url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20por%20PayPal' 
+  url: 'https://t.me/agentedeinformacion?text=Hola%20Areli,%20te%20mando%20la%20captura,%20pagué%20por%20PayPal' 
 }]
                         ]
                     }
@@ -208,7 +208,7 @@ La suscripción por tarjeta es de **16,50 USD**
                                   [{ text: '💳 Ir a pagar', url: 'https://app.takenos.com/pay/28fde53d-fd74-4f8b-a95a-5d7a15245c73' }],
                             [{ 
   text: '📤 Enviar captura', 
-  url: 'https://t.me/agentedeinformacion?text=Hola%20Nathaly,%20te%20mando%20la%20captura,%20pagué%20con%20tarjeta' 
+  url: 'https://t.me/agentedeinformacion?text=Hola%20Areli,%20te%20mando%20la%20captura,%20pagué%20con%20tarjeta' 
 }],
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }]
                         ]
@@ -237,7 +237,7 @@ Envía tu captura después del pago 💎`,
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
                             [{ 
   text: '✅ Enviar captura', 
-  url: 'https://t.me/bebecita0077?text=Hola%20Nataly,%20te%20mando%20la%20captura,%20pagué%20por%20Binance' 
+  url: 'https://t.me/bebecita0077?text=Hola%20Areli,%20te%20mando%20la%20captura,%20pagué%20por%20Binance' 
 }]
                         ]
                     }
