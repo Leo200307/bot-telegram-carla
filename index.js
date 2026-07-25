@@ -146,7 +146,7 @@ TODOS MIS MÉTODOS DE PAGO 🥰
                             [{ text: '⬅️ Volver', callback_data: 'metodo_pago' }],
                             [{ 
   text: '✅ Ya pagué', 
-  url: 'https://t.me/agentedeinformacion?text=Hola%20Areli,%20te%20mando%20la%20captura,%20pagué%20por%20QR%20Bolivia' 
+  url: 'https://t.me/bebecita0077?text=Hola%20Areli,%20te%20mando%20la%20captura,%20pagué%20por%20QR%20Bolivia' 
 }]
                         ]
                     }
